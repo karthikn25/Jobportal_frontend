@@ -9,6 +9,7 @@ import JobPost from './Component/JobPost/JobPost';
 import JobDetail from './Component/JobDetail/JobDetail';
 import ProfileEdit from './Component/ProfileEdit/ProfileEdit';
 import Menu from './Component/Menu/Menu';
+import SearchHome from './Component/SearchHome/SearchHome';
 
 function App() {
   return (
@@ -24,13 +25,15 @@ function App() {
 
       <Route  path="/home/:token" element={<Home/>}/>
 
-      <Route exact path="/post/:token" element={<JobPost/>}/>
+      <Route path="/post/:token" element={<JobPost/>}/>
 
-      <Route exact path="/detail/:id" element={<JobDetail/>}/>
+      <Route path="/detail/:id" element={<JobDetail/>}/>
 
-      <Route exact path="/profile/:token" element={<ProfileEdit/>}/>
+      <Route path="/profile/:token" element={<ProfileEdit/>}/>
 
-      <Route exact path="/menu/:token" element={<Menu/>}/>
+      <Route path="/menu/:token" element={<Menu/>}/>
+
+      <Route path='/search/:keyword' element={<SearchHome/>}/>
 
 
      </Routes>

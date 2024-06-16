@@ -48,6 +48,7 @@
     >i {
         position: relative;
         right: 25px;
+        cursor: pointer;
     }
 }
 
